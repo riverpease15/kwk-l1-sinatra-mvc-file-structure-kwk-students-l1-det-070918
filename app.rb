@@ -1,4 +1,4 @@
-class Tester < Sinatra::Base
+class App < Sinatra::Base
   gets '/hello/:id' do
     @name = params[:id]
     "Hello #{@name}"
